@@ -1,0 +1,213 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body>
+	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'> 
+		<a-assets>
+			<a-asset-item id="animals" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_animals.dae"></a-asset-item>
+			<a-asset-item id="bball" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_bball.dae"></a-asset-item>
+			<a-asset-item id="dome" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_dome.dae"></a-asset-item>
+			<a-asset-item id="floaty" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_floaty.dae"></a-asset-item>
+			<a-asset-item id="geoplex" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_geoplex.dae"></a-asset-item>
+			<a-asset-item id="jumper" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_jumpers.dae"></a-asset-item>
+			<a-asset-item id="instrument" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_instrument.dae"></a-asset-item>
+			<a-asset-item id="pika" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_pika.dae"></a-asset-item>
+			<a-asset-item id="playground" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_playground.dae"></a-asset-item>
+			<a-asset-item id="soccer" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_soccer_goal.dae"></a-asset-item>
+			<a-asset-item id="splash" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_splashpad.dae"></a-asset-item>
+			<a-asset-item id="swings" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_swings.dae"></a-asset-item>
+			<a-asset-item id="tireswing" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_tireswing.dae"></a-asset-item>
+			<a-asset-item id="vert" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_vert_wall.dae"></a-asset-item>
+			<a-asset-item id="zip" src="https://raw.githubusercontent.com/gai-csg/STREAM/master/ar_zipline.dae"></a-asset-item>
+		</a-assets>	
+	
+	<!-- handle barcode marker 0 -->
+		<a-marker type='barcode' value='0'>
+    			<a-entity collada-model='#animals'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 1 -->
+		<a-marker type='barcode' value='1'>
+    			<a-entity collada-model='#animals'></a-entity>
+		</a-marker>
+
+	<!-- handle barcode marker 2 -->
+		<a-marker type='barcode' value='2'>
+    			<a-entity collada-model='#bball'></a-entity>
+		</a-marker>
+	
+	<!-- handle barcode marker 3 -->
+		<a-marker type='barcode' value='3'>
+			<a-entity collada-model='#bball'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 4 -->
+		<a-marker type='barcode' value='4'>
+			<a-entity collada-model='#dome'></a-entity>
+		</a-marker>
+		
+	<!-- skip barcode marker 5 -->
+		<a-marker type='barcode' value='5'>
+			<a-entity collada-model='#dome'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 6 -->
+		<a-marker type='barcode' value='6'>
+			<a-entity collada-model='#floaty'></a-entity>
+		</a-marker>
+
+	<!-- handle barcode marker 7 -->
+		<a-marker type='barcode' value='7'>
+    			<a-entity collada-model='#floaty'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 8 -->
+		<a-marker type='barcode' value='8'>
+    			<a-entity collada-model='#geoplex'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 9 -->
+		<a-marker type='barcode' value='9'>
+    			<a-entity collada-model='#geoplex'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 10 -->
+		<a-marker type='barcode' value='10'>
+    			<a-entity collada-model='#jumper'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 11 -->
+		<a-marker type='barcode' value='11'>
+    			<a-entity collada-model='#jumper'></a-entity>
+		</a-marker>
+
+	<!-- handle barcode marker 12 -->
+		<a-marker type='barcode' value='12'>
+    			<a-entity collada-model='#instrument'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 13 -->
+		<a-marker type='barcode' value='13'>
+    			<a-entity collada-model='#instrument'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 14 -->
+		<a-marker type='barcode' value='14'>
+    			<a-entity collada-model='#playground'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 15 -->
+		<a-marker type='barcode' value='15'>
+    			<a-entity collada-model='#playground'></a-entity>
+		</a-marker>		
+
+	<!-- handle barcode marker 16 -->
+		<a-marker type='barcode' value='16'>
+    			<a-entity collada-model='#soccer'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 17 -->
+		<a-marker type='barcode' value='17'>
+    			<a-entity collada-model='#soccer'></a-entity>
+		</a-marker>	
+		
+	<!-- handle barcode marker 18 -->
+		<a-marker type='barcode' value='18'>
+    			<a-entity collada-model='#splash'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 19 -->
+		<a-marker type='barcode' value='19'>
+    			<a-entity collada-model='#splash'></a-entity>
+		</a-marker>
+			
+	<!-- handle barcode marker 20 -->
+		<a-marker type='barcode' value='20'>
+    			<a-entity collada-model='#swings'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 21 -->
+		<a-marker type='barcode' value='21'>
+    			<a-entity collada-model='#swings'></a-entity>
+		</a-marker>		
+
+	<!-- handle barcode marker 22 -->
+		<a-marker type='barcode' value='22'>
+    			<a-entity collada-model='#tireswing'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 23 -->
+		<a-marker type='barcode' value='23'>
+    			<a-entity collada-model='#tireswing'></a-entity>
+		</a-marker>	
+		
+	<!-- handle barcode marker 24 -->
+		<a-marker type='barcode' value='24'>
+    			<a-entity collada-model='#vert'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 25 -->
+		<a-marker type='barcode' value='25'>
+    			<a-entity collada-model='#vert'></a-entity>
+		</a-marker>	
+		
+	<!-- handle barcode marker 26 -->
+		<a-marker type='barcode' value='26'>
+    			<a-entity collada-model='#zip'></a-entity>
+		</a-marker>		
+
+	<!-- handle barcode marker 27 -->
+		<a-marker type='barcode' value='27'>
+    			<a-entity collada-model='#zip'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 28 -->
+		<a-marker type='barcode' value='28'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>	
+		
+	<!-- handle barcode marker 29 -->
+		<a-marker type='barcode' value='29'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 30 -->
+		<a-marker type='barcode' value='30'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>
+
+	<!-- handle barcode marker 31 -->
+		<a-marker type='barcode' value='31'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>		
+
+	<!-- handle barcode marker 32 -->
+		<a-marker type='barcode' value='32'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 33 -->
+		<a-marker type='barcode' value='33'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>	
+		
+	<!-- handle barcode marker 34 -->
+		<a-marker type='barcode' value='34'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>
+		
+	<!-- handle barcode marker 35 -->
+		<a-marker type='barcode' value='35'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>		
+
+	<!-- handle barcode marker 36 -->
+		<a-marker type='barcode' value='36'>
+    			<a-entity collada-model='#pika'></a-entity>
+		</a-marker>
+		
+	<a-entity camera></a-entity>
+	</a-scene>
+</body>
+</html>
