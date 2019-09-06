@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2019-09-06T15:31:43Z</created>
-        <modified>2019-09-06T15:31:43Z</modified>
+        <created>2019-09-06T15:34:37Z</created>
+        <modified>2019-09-06T15:34:37Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -13,12 +13,12 @@
         <camera id="ID1" name="skp_camera_Last_Saved_SketchUp_View">
             <optics>
                 <technique_common>
-                    <orthographic>
-                        <xmag>1</xmag>
+                    <perspective>
+                        <yfov>35</yfov>
                         <aspect_ratio>0</aspect_ratio>
                         <znear>1</znear>
                         <zfar>1000</zfar>
-                    </orthographic>
+                    </perspective>
                 </technique_common>
             </optics>
         </camera>
@@ -27,14 +27,14 @@
         <visual_scene id="ID2">
             <node name="SketchUp">
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>0.9456456 0.2289145 -0.2309817 -34.8402 -0.325199 0.66566 -0.6716713 -82.48183 -2.775558e-17 0.710278 0.7039213 117.7039 0 0 0 1</matrix>
+                    <matrix>0.9891608 0.0962924 -0.1108546 -8.316186 -0.1468365 0.6486714 -0.7467693 -91.05565 1.387779e-17 0.7549524 0.6557796 107.2479 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
                 <node id="ID3" name="group_0">
                     <matrix>1 0 0 -97.5 0 1 0 -97.5 0 0 1 0 0 0 0 1</matrix>
                 </node>
                 <node id="ID4" name="group_1">
-                    <matrix>0.3122755 0 0 -29.83793 0 0.3130229 0 -29.25 0 0 0.3118764 0 0 0 0 1</matrix>
+                    <matrix>0.281048 0 0 -26.85413 0 0.2817206 0 -26.325 0 0 0.2806888 0 0 0 0 1</matrix>
                     <instance_geometry url="#ID171">
                         <bind_material>
                             <technique_common>
