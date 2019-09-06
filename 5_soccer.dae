@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2019-09-06T15:17:27Z</created>
-        <modified>2019-09-06T15:17:27Z</modified>
+        <created>2019-09-06T15:31:43Z</created>
+        <modified>2019-09-06T15:31:43Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -26,26 +26,8 @@
     <library_visual_scenes>
         <visual_scene id="ID2">
             <node name="SketchUp">
-                <instance_geometry url="#ID287">
-                    <bind_material>
-                        <technique_common>
-                            <instance_material symbol="Material2" target="#ID288">
-                                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0" />
-                            </instance_material>
-                        </technique_common>
-                    </bind_material>
-                </instance_geometry>
-                <instance_geometry url="#ID293">
-                    <bind_material>
-                        <technique_common>
-                            <instance_material symbol="Material2" target="#ID288">
-                                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0" />
-                            </instance_material>
-                        </technique_common>
-                    </bind_material>
-                </instance_geometry>
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>0.990953 0.04437302 -0.1266615 -29.95076 -0.1342092 0.3276346 -0.9352238 -128.665 3.469447e-17 0.9437619 0.3306257 65.86423 0 0 0 1</matrix>
+                    <matrix>0.9456456 0.2289145 -0.2309817 -34.8402 -0.325199 0.66566 -0.6716713 -82.48183 -2.775558e-17 0.710278 0.7039213 117.7039 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
                 <node id="ID3" name="group_0">
@@ -1854,48 +1836,6 @@
                 </triangles>
             </mesh>
         </geometry>
-        <geometry id="ID287">
-            <mesh>
-                <source id="ID290">
-                    <float_array id="ID292" count="6">-4.689582e-13 -97.5 -0.03361414 -4.689582e-13 97.5 -0.03361414</float_array>
-                    <technique_common>
-                        <accessor count="2" source="#ID292" stride="3">
-                            <param name="X" type="float" />
-                            <param name="Y" type="float" />
-                            <param name="Z" type="float" />
-                        </accessor>
-                    </technique_common>
-                </source>
-                <vertices id="ID291">
-                    <input semantic="POSITION" source="#ID290" />
-                </vertices>
-                <lines count="1" material="Material2">
-                    <input offset="0" semantic="VERTEX" source="#ID291" />
-                    <p>1 0</p>
-                </lines>
-            </mesh>
-        </geometry>
-        <geometry id="ID293">
-            <mesh>
-                <source id="ID294">
-                    <float_array id="ID296" count="6">97.5 0 0 -97.5 0 0</float_array>
-                    <technique_common>
-                        <accessor count="2" source="#ID296" stride="3">
-                            <param name="X" type="float" />
-                            <param name="Y" type="float" />
-                            <param name="Z" type="float" />
-                        </accessor>
-                    </technique_common>
-                </source>
-                <vertices id="ID295">
-                    <input semantic="POSITION" source="#ID294" />
-                </vertices>
-                <lines count="1" material="Material2">
-                    <input offset="0" semantic="VERTEX" source="#ID295" />
-                    <p>1 0</p>
-                </lines>
-            </mesh>
-        </geometry>
     </library_geometries>
     <library_materials>
         <material id="ID8" name="Color_M00">
@@ -1912,9 +1852,6 @@
         </material>
         <material id="ID250" name="__Blacktop_Old_01_1">
             <instance_effect url="#ID251" />
-        </material>
-        <material id="ID288" name="edge_color000255">
-            <instance_effect url="#ID289" />
         </material>
     </library_materials>
     <library_effects>
@@ -1970,20 +1907,6 @@
                             <color>0.5176471 0.5333333 0.545098 1</color>
                         </diffuse>
                     </lambert>
-                </technique>
-            </profile_COMMON>
-        </effect>
-        <effect id="ID289">
-            <profile_COMMON>
-                <technique sid="COMMON">
-                    <constant>
-                        <transparent opaque="A_ONE">
-                            <color>0 0 0 1</color>
-                        </transparent>
-                        <transparency>
-                            <float>1</float>
-                        </transparency>
-                    </constant>
                 </technique>
             </profile_COMMON>
         </effect>
