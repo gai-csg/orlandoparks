@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2019-09-10T19:34:14Z</created>
-        <modified>2019-09-10T19:34:14Z</modified>
+        <created>2019-09-10T19:36:03Z</created>
+        <modified>2019-09-10T19:36:03Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -26,21 +26,12 @@
     <library_visual_scenes>
         <visual_scene id="ID2">
             <node name="SketchUp">
-                <instance_geometry url="#ID134">
-                    <bind_material>
-                        <technique_common>
-                            <instance_material symbol="Material2" target="#ID135">
-                                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0" />
-                            </instance_material>
-                        </technique_common>
-                    </bind_material>
-                </instance_geometry>
                 <node name="skp_camera_Last_Saved_SketchUp_View">
                     <matrix>0.7071068 -0.4082483 0.5773503 168.9075 0.7071068 0.4082483 -0.5773503 -166.9144 5.551115e-17 0.8164966 0.5773503 204.1432 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
                 <node id="ID3" name="group_0">
-                    <matrix>7.101958e-13 1.272016 0 -97.37025 -1.2768 7.076562e-13 0 94.744 0 0 1.272016 0 0 0 0 1</matrix>
+                    <matrix>7.101958e-13 1.272016 0 -97.5 -1.2768 7.076562e-13 0 62.244 0 0 1.272016 0 0 0 0 1</matrix>
                     <instance_geometry url="#ID4">
                         <bind_material>
                             <technique_common>
@@ -866,27 +857,6 @@
                 </triangles>
             </mesh>
         </geometry>
-        <geometry id="ID134">
-            <mesh>
-                <source id="ID137">
-                    <float_array id="ID139" count="6">0 130 0 1.421085e-14 -65 0</float_array>
-                    <technique_common>
-                        <accessor count="2" source="#ID139" stride="3">
-                            <param name="X" type="float" />
-                            <param name="Y" type="float" />
-                            <param name="Z" type="float" />
-                        </accessor>
-                    </technique_common>
-                </source>
-                <vertices id="ID138">
-                    <input semantic="POSITION" source="#ID137" />
-                </vertices>
-                <lines count="1" material="Material2">
-                    <input offset="0" semantic="VERTEX" source="#ID138" />
-                    <p>1 0</p>
-                </lines>
-            </mesh>
-        </geometry>
     </library_geometries>
     <library_materials>
         <material id="ID5" name="__0130_Gainsboro_1">
@@ -903,9 +873,6 @@
         </material>
         <material id="ID127" name="_0072_DarkSeaGreen">
             <instance_effect url="#ID128" />
-        </material>
-        <material id="ID135" name="edge_color000255">
-            <instance_effect url="#ID136" />
         </material>
     </library_materials>
     <library_effects>
@@ -967,20 +934,6 @@
                             <color>0.5607843 0.7372549 0.5607843 1</color>
                         </diffuse>
                     </lambert>
-                </technique>
-            </profile_COMMON>
-        </effect>
-        <effect id="ID136">
-            <profile_COMMON>
-                <technique sid="COMMON">
-                    <constant>
-                        <transparent opaque="A_ONE">
-                            <color>0 0 0 1</color>
-                        </transparent>
-                        <transparency>
-                            <float>1</float>
-                        </transparency>
-                    </constant>
                 </technique>
             </profile_COMMON>
         </effect>
