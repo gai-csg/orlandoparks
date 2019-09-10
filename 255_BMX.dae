@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2019-09-10T19:47:24Z</created>
-        <modified>2019-09-10T19:47:24Z</modified>
+        <created>2019-09-10T20:06:08Z</created>
+        <modified>2019-09-10T20:06:08Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -1548,7 +1548,7 @@
         <geometry id="ID227">
             <mesh>
                 <source id="ID230">
-                    <float_array id="ID232" count="15">47.45203 1085.518 38.77714 9.930244 969.3031 31.82315 142.0092 1094.346 41.32987 88.70712 1025.358 37.74353 145.3506 944.2245 36.14877</float_array>
+                    <float_array id="ID232" count="15">47.45203 1085.518 38.77714 9.930244 969.3031 31.82315 142.0092 1094.346 41.32987 145.3506 944.2245 36.14877 88.70712 1025.358 37.74353</float_array>
                     <technique_common>
                         <accessor count="5" source="#ID232" stride="3">
                             <param name="X" type="float" />
@@ -1562,7 +1562,7 @@
                 </vertices>
                 <lines count="8" material="Material2">
                     <input offset="0" semantic="VERTEX" source="#ID231" />
-                    <p>1 0 0 2 2 3 3 4 2 4 0 3 4 1 3 1</p>
+                    <p>1 0 0 2 2 3 4 3 2 4 0 4 3 1 4 1</p>
                 </lines>
             </mesh>
         </geometry>
